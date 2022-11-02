@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>chat app</title>
+		<link href="./Styles/styles.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div id="info-form">
+			<div id="page-header">CHATATIVE</div>
+			<div class="page-content">
+				<div>
+					<img class="logo-img" src="./Assets/logoGif.gif" alt="Logo" />
+				</div>
+				<div class="submit-form">
+					<input
+						id="user"
+						type="text"
+						placeholder="   Name"
+						autocomplete="off"
+					/>
+					<button id="submit">Submit</button>
+				</div>
+			</div>
+		</div>
+		<div id="chat-page">
+			<div class="chat-box-position">
+				<div class="chat-space">
+					<div class="header">
+						<div><img class="icon" src="./Assets/airplane.png" /></div>
+						<div id="chat-page-header"></div>
+						<button id="online-user">
+							<img class="profile" src="./Assets/userProfile.png" />
+						</button>
+					</div>
+					<div id="online-display"><p id="display-user"></p></div>
+					<div id="feedback"></div>
+					<div id="chat-window">
+						<div id="output"></div>
+					</div>
+					<div class="message-box">
+						<input id="message" type="text" placeholder="Message" />
+						<button id="send">Send</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="./socket.io/socket.io.js"></script>
+	<script src="./index.js"></script>
+</html>
